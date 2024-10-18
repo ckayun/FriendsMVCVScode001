@@ -1,0 +1,5 @@
+{
+  "appService.preDeployTask": "publish-release",
+  "appService.deploySubpath": "FriendsMVCVScode001\\bin\\Release\\net8.0\\publish",
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/adcc9f39-de59-474d-8d2b-e81eebbfd7ec/resourceGroups/kayun-seasia-resourcegroup-001/providers/Microsoft.Web/sites/kayun-friendsmvcvscode001-seasia-dev-001"
+}

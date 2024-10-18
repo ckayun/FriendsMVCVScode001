@@ -1,0 +1,35 @@
+@model IEnumerable<FriendsMVCVScode001.Models.FriendViewModel>
+@{
+    ViewData["Title"] = "List Friends";
+}
+<h1>Index</h1>
+<h4>@ViewData["Title"]</h4>
+<a asp-container="Friend" asp-action="Create" class="btn btn-primary float-end my-2">Add Friend</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Id)</th>
+            <th>@Html.DisplayNameFor(model => model.Firstname)</th>
+            <th>@Html.DisplayNameFor(model => model.Lastname)</th>
+            <th>@Html.DisplayNameFor(model => model.Mobile)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    @foreach (var friend in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(model => friend.Id)</td>
+            <td>@Html.DisplayFor(model => friend.Firstname)</td>
+            <td>@Html.DisplayFor(model => friend.Lastname)</td>
+            <td>@Html.DisplayFor(model => friend.Mobile)</td>
+            <td>@Html.DisplayFor(model => friend.Email)</td>
+            <td>
+                <a asp-controller="Friend" asp-action="Edit" asp-route-id="@friend.Id"
+                    class="btn btn-info text-white">Edit</a>
+                <a asp-controller="Friend" asp-action="Delete" asp-route-id="@friend.Id"
+                    class="btn btn-danger text-white">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
