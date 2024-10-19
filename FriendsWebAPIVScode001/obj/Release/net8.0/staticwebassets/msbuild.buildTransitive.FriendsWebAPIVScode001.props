@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FriendsWebAPIVScode001.props" />
+</Project>

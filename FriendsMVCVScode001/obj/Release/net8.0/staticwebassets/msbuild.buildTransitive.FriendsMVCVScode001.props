@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\FriendsMVCVScode001.props" />
-</Project>
