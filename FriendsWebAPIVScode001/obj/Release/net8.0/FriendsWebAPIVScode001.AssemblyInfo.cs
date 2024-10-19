@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FriendsWebAPIVScode001")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+313d434e1be41ba4575ac54948b2e2b8b09c7503")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7e4030c2e04bb03be1eec3df495955c20bb2e72")]
 [assembly: System.Reflection.AssemblyProductAttribute("FriendsWebAPIVScode001")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FriendsWebAPIVScode001")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

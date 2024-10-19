@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\FriendsWebAPIVScode001.props" />
-</Project>
