@@ -165,12 +165,12 @@ namespace FriendsWebAPIVScode001.Controllers {
         //     }
         // }
 
-        [HttpDelete]
-        public async Task<ActionResult> Delete(FriendViewModel deleteFriendViewModel) {
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id) {
             try {
-                var friendViewModel = await _context.Friends.SingleOrDefaultAsync(f => f.Id == deleteFriendViewModel.Id);
+                var friendViewModel = await _context.Friends.SingleOrDefaultAsync(f => f.Id == id);
                 if (friendViewModel == null) {
-                    string strNotFound = "Friend Not Found with Id: " + deleteFriendViewModel.Id;
+                    string strNotFound = "Friend Not Found with Id: " + id;
                     return BadRequest(strNotFound);
                 } else {
                     _context.Friends.Remove(friendViewModel);
